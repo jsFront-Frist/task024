@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style media="screen">
+        html {
+            width: 100%;
+        }
+        .one {
+            height: 500px!important;
+        }
+        #root {
+            width: 100%;
+        }
+        .box {
+            display: flex;
+            width: 40%;
+            height: 50%;
+            border: 2px solid black;
+            align-items: center;
+            align-content: space-between;
+            margin: 0 auto;
+            background-color: white;
+        }
+        .box:focus {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box one" id="root">
+        <div class="box second">1
+            <div class="box third">2
+                <div class="box forth">
+                  3      
+                </div>
+                 <div class="box forth">
+                  4     
+                </div>
+                 <div class="box forth">
+                  5      
+                </div>
+                <div class="box forth">
+                     6
+                </div>
+            </div>
+            <div class="box third">
+                <div class="box forth">
+
+                </div>
+                <div class="box forth">
+
+                </div>
+            </div>
+             <div class="box third">
+                <div class="box forth">
+
+                </div>
+                <div class="box forth">
+
+                </div>
+            </div>
+        </div>
+        <div class="box second">
+            <div class="box third">
+                <div class="box forth">
+
+                </div>
+                <div class="box forth">
+
+                </div>
+            </div>
+            <div class="box third">
+                <div class="box forth">
+
+                </div>
+                <div class="box forth">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="text" id="insert">
+    <button type="button" id="insert-ctr">插入</button>
+    <input type="text" id="search">
+    <button id="begin">查找</button>
+    <button type="button" name="button" id="DLR">先序</button>
+    <!--<button type="button" name="button" id="LDR">中序</button>-->
+    <button type="button" name="button" id="LRD">后序</button>
+	<script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
