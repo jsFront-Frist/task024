@@ -85,6 +85,9 @@
 		 e.srcElement.style.backgroundColor = 'orange';
 		 target = e.srcElement || e.target;
 	});
+	document.getElementById("delete").addEventListener("click",function  (e) {
+		target.parentNode.removeChild(target);
+	})
 	document.getElementById("insert-ctr").addEventListener("click",function (e) {
 		var div = document.createElement("div");
 		div.innerText = document.getElementById("insert").value;
